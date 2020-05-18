@@ -1,0 +1,60 @@
+
+[1] // JSON Sample for customer is a company
+URL: http://localhost:8080/customer
+{
+    "customerNumber": "CN3",
+    "lastOrderDate": "2020-05-18T10:49:52.830+0000",
+    "company": {
+        "name": "COMP1",
+        "registrationNumber": "REG1981",
+        "phoneNumber": {
+            "areaCode": 1234,
+            "number": 9953820025
+        }
+    }
+}
+
+[2] // JSON Sample for customer is a person
+URL: http://localhost:8080/customer
+{
+    "customerNumber": "CN7",
+    "lastOrderDate": "2020-05-18T10:49:52.830+0000",
+    "person": {
+        "firstName": "FN1",
+        "lastName": "LN1",
+        "phoneNumber": {
+            "areaCode": 1234,
+            "number": 8853820025
+        }
+    }
+}
+
+[3] // JSON Sample for supplier is a company
+URL: http://localhost:8080/supplier
+{
+    "orderLeadTimeInDays": "14",
+    "taxNumber": "TAX1",
+    "company": {
+        "name": "COMP1",
+        "registrationNumber": "REG1982",
+        "phoneNumber": {
+            "areaCode": 4321,
+            "number": 7753820025
+        }
+    }
+}
+
+[4] // JSON Sample for supplier is a person
+URL: http://localhost:8080/supplier
+{
+    "orderLeadTimeInDays": "15",
+    "taxNumber": "TAX2",
+    "person": {
+        "firstName": "FN1",
+        "lastName": "LN1",
+        "phoneNumber": {
+            "areaCode": 9876,
+            "number": 6653820025
+        }
+    }
+}
