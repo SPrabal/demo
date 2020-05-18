@@ -15,6 +15,7 @@ import com.assessment.model.Supplier;
 
 /**
  * @author Prabal
+ * @Description Contact data access object
  *
  */
 @Repository

@@ -13,6 +13,7 @@ import javax.persistence.OneToOne;
 
 /**
  * @author Prabal
+ * @Description Suppplier entity model
  *
  */
 
@@ -23,10 +24,10 @@ public class Supplier {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column
+	@Column(name="taxNumber", nullable = false)
 	private String taxNumber;
-	
-	@Column
+		
+	@Column(name="orderLeadTimeInDays", nullable = false)
 	private Integer orderLeadTimeInDays;
 	
 	@OneToOne(mappedBy = "supplier", cascade = CascadeType.PERSIST, optional = true)

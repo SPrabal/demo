@@ -13,6 +13,7 @@ import javax.persistence.OneToOne;
 
 /**
  * @author Prabal
+ * @Description Phone Number entity model
  *
  */
 
@@ -23,10 +24,10 @@ public class PhoneNumber {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column
+	@Column(name="areaCode", nullable = false)
 	private Integer areaCode;
 	
-	@Column
+	@Column(name="number", nullable = false)
 	private Long number;
 
     @OneToOne(optional = true)

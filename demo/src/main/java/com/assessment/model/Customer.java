@@ -17,9 +17,9 @@ import javax.persistence.TemporalType;
 
 /**
  * @author Prabal
+ * @Description Customer entity model
  *
  */
-
 @Entity(name = "customer")
 public class Customer {
 	@Id
@@ -27,7 +27,7 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column
+	@Column(name="customerNumber", nullable = false)
 	private String customerNumber;
 	
 	@Temporal(TemporalType.TIMESTAMP)

@@ -15,6 +15,7 @@ import javax.persistence.OneToOne;
 
 /**
  * @author Prabal
+ * @Description Company entity model
  *
  */
 
@@ -25,10 +26,10 @@ public class Company {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column
+	@Column(name="name", nullable = false)
 	private String name;
 	
-	@Column
+	@Column(name="registrationNumber", nullable = false)
 	private String registrationNumber;
 	
 	@OneToOne(mappedBy = "company", cascade = CascadeType.PERSIST)
