@@ -1,5 +1,5 @@
 
-[1] // JSON Sample for customer is a company
+[1] // JSON Sample for customer is a company {First one}
 URL: http://localhost:8080/customer
 {
     "customerNumber": "CN3",
